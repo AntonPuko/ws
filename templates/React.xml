@@ -1,0 +1,32 @@
+<templateSet group="React">
+  <template name="rc" value="import React, {Component, PropTypes} from 'react';&#10;&#10;class $NAME$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;$END$&lt;/div&gt;&#10;            );&#10;    }   &#10;}&#10;&#10;$NAME$.propTypes = {&#10;};&#10;&#10;export default $NAME$;" description="react create class" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcs" value="import React, {Component, PropTypes} from 'react';&#10;import styles from './$NAME$.scss';&#10;&#10;export default class $NAME$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;$END$&lt;/div&gt;&#10;            );&#10;    }   &#10;}&#10;" description="react create class with cssModules" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rfs" value="import React, {PropTypes} from 'react';&#10;import styles from './$NAME$.scss';&#10;&#10;const $NAME$ = (props) =&gt; {&#10;    return (&#10;    &lt;div&gt;$END$&lt;/div&gt;&#10;    );&#10;};&#10;&#10;export default $NAME$;" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="import React, {PropTypes} from 'react';&#10;&#10;const $NAME$ = (props) =&gt; {&#10;    return (&#10;    &lt;div&gt;$END$&lt;/div&gt;&#10;    );&#10;};&#10;&#10;$NAME$.propTypes = {&#10;};&#10;&#10;export default $NAME$;" shortcut="SPACE" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcc" value="import React, {Component, PropTypes} from 'react';&#10;import {connect} from 'react-redux';&#10;&#10;class $NAME$ extends Component {&#10;    render() {&#10;        return (&#10;            &lt;div&gt;$END$&lt;/div&gt;&#10;            );&#10;    }   &#10;}&#10;&#10;$NAME$.propTypes = {&#10;};&#10;&#10;function mapStateToProps(state,ownProps) {&#10;}&#10;&#10;export default connect(mapStateToProps)($NAME$);" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
